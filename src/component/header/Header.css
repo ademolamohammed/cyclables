@@ -1,0 +1,165 @@
+/* .Wrapper{
+    padding: 16px 102px 16px 102px;
+}
+
+.Wrapper_Box{
+    border: 1px solid red;
+    display: flex;
+}
+
+.Wrapper_Header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47.6px;
+    color: rgba(0, 12, 56, 1);
+}
+
+ul{
+    padding:0;
+    margin-left: 311px;
+    margin-right: 311px;
+    width: 484px;
+    flex-direction: flex-start;
+    display: flex;
+    list-style: none;
+}
+
+li:not(:last-child){
+    margin-right: 80px;
+}
+
+
+
+.Header_Button{
+    font-weight: 500;
+    size: 24px;
+    line-height: 31.7px;
+    color:#ffff;
+    background-color:rgba(3, 155, 0, 1);
+    padding: 16px 18.5px 16px 18.5px;
+    border-radius: 30px;
+    align-self: center;
+    width: 198px;
+} */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px 102px 16px 120px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo styling */
+.logo h1 {
+    font-family: Arial, sans-serif;
+    color: #05163D;
+    font-weight: bold;
+}
+
+/* Navigation Links for desktop */
+.nav-links ul {
+    display: flex;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #05163D;
+    font-weight: 500;
+}
+
+.nav-links ul li a.active {
+    color: #00b500;
+}
+
+/* Contact button */
+.contact-btn button {
+    background-color: #00b500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-btn button:hover {
+    background-color: #009e00;
+}
+
+/* Burger Icon */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #05163D;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Change burger icon when open */
+.burger-icon.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-icon.open .line2 {
+    opacity: 0;
+}
+
+.burger-icon.open .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .contact-btn {
+        display: none; /* Optionally hide contact button on small screens */
+    }
+}
