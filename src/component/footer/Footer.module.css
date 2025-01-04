@@ -1,0 +1,36 @@
+th{
+    padding: 5px;
+    text-align: left;
+    padding-right: 50px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+td{
+    padding: 5px;
+    padding-right: 70px;
+    font-size: 12px;
+}
+.div{
+    display: flex;
+    gap: 150px;
+    padding-top: 50px;
+    padding-left: 180px;
+    margin-top: 40px;
+}
+h4{
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+h5{
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+.para{
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+    text-align: left;
+}

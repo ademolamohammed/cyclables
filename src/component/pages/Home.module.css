@@ -1,0 +1,40 @@
+.Image{
+    margin-left: 150px;
+    margin-top: 70px;
+    display: flex;
+    gap: 100px;
+}
+.reason{
+    width: 270px;
+    margin: auto;
+}
+p{
+    color: gray;
+    font-size: 12px;
+}
+.Offer{
+    margin-top: 100px;
+}
+button.weOffer{
+    color: mediumspringgreen;
+    background-color: white;
+    border: 1px solid mediumseagreen;
+    border-radius: 62px;
+    width: 130px;
+    height: 30px;
+}
+.textBackground{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    background-image: url('../images/Banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+.box{
+    width: 700px;
+    margin: auto;
+}
